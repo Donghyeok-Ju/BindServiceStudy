@@ -37,6 +37,7 @@ public class Main2Activity extends AppCompatActivity {
                         Context.BIND_AUTO_CREATE);
             }
         });
+
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { // 서비스 종료
                 if(isService){
@@ -48,6 +49,7 @@ public class Main2Activity extends AppCompatActivity {
                 }
             }
         });
+
         b3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {//서비스데이터확인
                 if (!isService) {
