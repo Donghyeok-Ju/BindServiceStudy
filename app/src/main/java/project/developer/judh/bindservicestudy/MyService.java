@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 public class MyService extends Service {
     private final IBinder mBinder = new LocalBinder();
-    private int number;
+    public static int number;
 
     class LocalBinder extends Binder {
         MyService getService() {

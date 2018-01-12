@@ -59,11 +59,14 @@ public class Main2Activity extends AppCompatActivity {
                     return;
                 }
                 int num = myService.getNumber();//서비스쪽 메소드로 값 전달 받아 호출
+                int test = MyService.number;
                 Toast.makeText(getApplicationContext(),
-                        "받아온 데이터 : " + num,
+                        "받아온 데이터 : " + num + ", test : "+test,
                         Toast.LENGTH_LONG).show();
             }
         });
+
+        b1.performClick();
 
     }
 

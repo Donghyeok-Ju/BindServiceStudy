@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {//서비스데이터확인
+            public void onClick(View v) { //서비스데이터확인
                 if (!isService) {
                     Toast.makeText(getApplicationContext(),
                             "서비스중이 아닙니다, 데이터받을수 없음",
@@ -63,9 +63,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) { // 서비스 종료
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
